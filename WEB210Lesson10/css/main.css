@@ -1,0 +1,151 @@
+/* /* fonts *
+font-family: 'Bebas Neue', cursive;
+font-family: 'Open Sans', sans-serif; 
+*/
+/* color palette
+--eggshell: #f4f1de;
+--terra-cotta: #e07a5f;
+--independence: #3d405b;
+--green-sheen: #81b29a;
+--deep-champagne: #f2cc8f;
+2
+--space-cadet: #22223bff;
+--independence: #4a4e69ff;
+--heliotrope-gray: #9a8c98ff;
+--silver-pink: #c9ada7ff;
+--isabelline: #f2e9e4ff;
+ */
+ .title {
+    margin: 0;
+    padding: 1px 0;
+    height: 250px;
+    background-image: url(../images/background400.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: solid black 2px;
+    box-shadow: 2px 2px 5px #444;
+  }
+  .title h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 7vw;
+    letter-spacing: 3px;
+    color: #22223bff;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 3px 3px 0px #f2cc8f;
+    text-transform: uppercase;
+    padding-bottom: 2%;
+  }
+ nav {
+    width: 100%;
+    background-color: #22223bff;
+    
+    }
+    nav ul {
+    list-style-type: none;
+    width: 80%;
+    margin: 0 auto;
+    }
+    nav ul li {
+    display: inline-block;
+    width: 23.5%;
+    text-align: center;
+    
+    }
+    nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5% 0;
+    display: block;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f1de;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        color: #22223bff;
+        margin: 0 2% 1.5em 2%;
+        line-height: 1.5;
+      }
+      .mainarea {
+        padding: 1%;
+        text-align: center;
+      }
+      .project1, .project2, .project3, .education {
+        background-color: #f2e9e4ff;
+        border: solid #22223bff 2px;
+        box-shadow: 2px 2px 5px #444;
+        padding: 2%;
+        margin-top: 5px;
+      }
+       img {
+        width: 85%;
+        margin: 0 auto;
+        display: block;
+      }
+      
+    .contact {
+        width: 100%;
+        background-color: #22223bff;
+        color: #fff;
+        text-align: center;
+        border: solid black 2px;
+        box-shadow: 2px 2px 5px #444;
+      }
+      .contact .social a:link {
+        text-decoration: none;
+        color: white;
+      }
+      .contact .social a:visited {
+        text-decoration: none;
+        color: lightpink;
+      }
+      .contact .social a:hover {
+        text-decoration: none;
+        color: black;
+      }
+      .contact a {
+        color: lightpink;
+      }
+
+      @supports (grid-area: auto) {
+    }
+    
+    @media (min-width: 40em) {
+
+        .mainarea {
+            display: grid;
+            grid-template-columns: 1fr, 1fr, 1fr;
+            gap: 8px;
+          }
+        
+          .title {
+            display: grid;
+            grid-column: 1/4;
+            grid-row: 1;
+          }
+          .project1 {
+            grid-column: 1;
+            grid-row: 2;
+          }
+          .project2 {
+            grid-column: 2;
+            grid-row: 2;
+          }
+          .project3 {
+            grid-column: 3;
+            grid-row: 2;
+          }
+          .education {
+            grid-column: 1/4;
+            grid-row: 3;
+          }
+          .contact {
+            grid-column: 1/4;
+            grid-row: 4;
+          }
+
+
+    }
